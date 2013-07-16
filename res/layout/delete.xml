@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/benz">
+
+    <TextView
+        android:id="@+id/searchcontactid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="16dp"
+        android:layout_y="46dp"
+        android:text="Search Contact"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+
+    <AutoCompleteTextView
+        android:id="@+id/contactToDelete"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_x="82dp"
+        android:layout_y="94dp"
+        android:text="" >
+
+        <requestFocus />
+    </AutoCompleteTextView>
+
+    <TableLayout
+        android:id="@+id/maintable"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_x="43dp"
+        android:layout_y="196dp" >
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="87dp"
+        android:layout_height="wrap_content"
+        android:layout_x="32dp"
+        android:layout_y="322dp"
+        android:onClick="goBack"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_x="141dp"
+        android:layout_y="322dp"
+        android:onClick="rawDelete"
+        android:text="DeleteContact" />
+    		
+</AbsoluteLayout>

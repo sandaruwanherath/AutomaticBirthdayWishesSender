@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/hd">
+
+
+
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="192dp"
+        android:layout_height="wrap_content"
+        android:layout_x="109dp"
+        android:layout_y="26dp"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/dateDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="164dp"
+        android:layout_y="213dp" />
+
+
+
+
+    <EditText
+        android:id="@+id/editMessage"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_x="112dp"
+        android:layout_y="148dp"
+        android:inputType="textPersonName" />
+
+
+
+    <EditText
+        android:id="@+id/editBirthday"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_x="106dp"
+        android:layout_y="204dp"
+        android:editable="false"
+        android:inputType="none" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="19dp"
+        android:layout_y="165dp"
+        android:text="Message" />
+
+    <TextView
+        android:id="@+id/contactno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="18dp"
+        android:layout_y="94dp"
+        android:text="ContactNo" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="122dp"
+        android:layout_height="44dp"
+        android:layout_x="20dp"
+        android:layout_y="33dp"
+        android:text="Name" />
+
+    <TextView
+        android:id="@+id/birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="18dp"
+        android:layout_y="222dp"
+        android:text="Birthday" />
+
+
+
+    <EditText
+        android:id="@+id/editContactNo"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_x="112dp"
+        android:layout_y="95dp"
+        android:inputType="phone" />
+
+    <DatePicker
+        android:id="@+id/dpResult"
+        android:layout_width="18dp"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="14dp"
+        android:layout_y="352dp"
+        android:onClick="onClick"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="91dp"
+        android:layout_y="354dp"
+        android:onClick="clearButtonMethod"
+        android:text="Clear" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="163dp"
+        android:layout_y="354dp"
+        android:onClick="goBack"
+        android:text="Back" />
+
+    <Button
+        android:id="@+id/btnChangeDate"
+        android:layout_width="194dp"
+        android:layout_height="wrap_content"
+        android:layout_x="110dp"
+        android:layout_y="278dp"
+        android:onClick="editBirthDay"
+        android:text="Choose Birthday" />
+		
+</AbsoluteLayout>
+
